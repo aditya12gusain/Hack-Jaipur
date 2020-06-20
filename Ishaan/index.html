@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HackJaipur</title>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='app.js'></script>
+</head>
+<body>   
+    <h1 class="title">Tharo Jaipur Corona Tracker</h1>   
+    <div class="containment">                
+        <iframe src="https://maps.mapmyindia.com/corona?safety_alert"></iframe>
+    </div>       
+        <div class="stats_container">
+            <h4>Total Cases</h4>
+            <h1 id="cases"></h1>
+            <h4>Total Deaths</h4>
+            <h1 id="Deaths"></h1>
+            <h4>Active Cases</h4>
+            <h1 id="active"></h1>
+            <h4>Total Recovered</h4>
+            <h1 id="recovered"></h1>
+
+            <h4>New Cases</h4>
+            <h1 id="newcases"></h1>
+            <h4>New Deaths</h4>
+            <h1 id="newDeaths"></h1>
+            <h4>Recovered Today</h4>
+            <h1 id="todayrecov"></h1>
+
+            <button id="button">Click</button>
+    </div>        
+
+    <script>
+        document.getElementById("button").addEventListener("click",function(){
+            document.querySelector(".containment").style.display = "flex";
+        })
+    </script>
+</body>
+</html>
