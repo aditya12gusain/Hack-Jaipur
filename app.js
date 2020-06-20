@@ -21,6 +21,10 @@ app.get("/know-more.html", function (req, res) {
   res.sendFile(__dirname + "/know-more.html");
 });
 
+app.get("/quiz.html", function (req, res) {
+  res.sendFile(__dirname + "/quiz.html");
+});
+
 app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running at port 3000");
 });
