@@ -25,6 +25,10 @@ app.get("/quiz.html", function (req, res) {
   res.sendFile(__dirname + "/quiz.html");
 });
 
+app.get("/Ishaan/covid.html", function (req, res) {
+  res.sendFile(__dirname + "/Ishaan/covid.html");
+});
+
 app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running at port 3000");
 });
