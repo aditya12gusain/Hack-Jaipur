@@ -337,7 +337,7 @@ app.get("/assets/fold/assets/masonry/masonry.pkgd.min.js", function (req, res) {
 });
 
 app.get("/assets/assets/img/TharoJaipurCircular.png", function (req, res) {
-  res.sendFile(__dirname + "/assets/img/TharoJaipurCircular.png");
+  res.sendFile(__dirname + "../assets/img/TharoJaipurCircular.png");
 });
 ///////////////////////////////////////////////////////
 app.get("/assets/fold/index.html", function (req, res) {
