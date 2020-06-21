@@ -3,9 +3,9 @@ const urlsToCache = [
   "index.html",
   "quiz.html",
   "know-more.html",
-  "covid.html",
+  "Ishaan/covid.html",
   "offline.html",
-  "photogallery.html",
+  "assets/fold/photogallery.html",
 ];
 
 const self = this;
