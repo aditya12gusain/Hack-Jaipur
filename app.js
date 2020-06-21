@@ -360,6 +360,26 @@ app.get("/assets/fold/assets/fold/photogallery.html", function (req, res) {
   res.sendFile(__dirname + "/assets/fold/photogallery.html");
 });
 
+app.get("/manifest.json", function (req, res) {
+  res.sendFile(__dirname + "/manifest.json");
+});
+
+app.get("/serviceworker.js", function (req, res) {
+  res.sendFile(__dirname + "/serviceworker.js");
+});
+
+app.get("/offline.html", function (req, res) {
+  res.sendFile(__dirname + "/offline.html");
+});
+
+app.get("/assets/img/TharoJaipurCircular.png", function (req, res) {
+  res.sendFile(__dirname + "/assets/img/TharoJaipurCircular.png");
+});
+
+app.get("/photogallery.html", function (req, res) {
+  res.sendFile(__dirname + "/assets/fold/photogallery.html");
+});
+
 app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running at port 3000");
 });

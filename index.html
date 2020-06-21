@@ -7,7 +7,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="./assets//css/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/img/TharoJaipurCircular.png"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Modern pwa react application" />
+    <link rel="apple-touch-icon" href="./assets/img/TharoJaipurCircular.png" />
+    <link rel="manifest" href="./manifest.json" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -192,6 +200,18 @@
     >
       © Copyright 2020
     </footer>
+
+    <!--Service worker-->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./serviceworker.js")
+            .then((reg) => console.log("Success:", reg.scope))
+            .catch((err) => console.log("Failure:", err));
+        });
+      }
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
