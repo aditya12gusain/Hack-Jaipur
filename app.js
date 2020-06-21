@@ -29,6 +29,18 @@ app.get("/Ishaan/covid.html", function (req, res) {
   res.sendFile(__dirname + "/Ishaan/covid.html");
 });
 
+app.get("/covid.html", function (req, res) {
+  res.sendFile(__dirname + "/Ishaan/covid.html");
+});
+
+app.get("/Ishaan/index.html", function (req, res) {
+  res.sendFile(__dirname + "/index.html");
+});
+
+app.get("/assets/img/TharoJaipurCircular.png", function (req, res) {
+  res.sendFile(__dirname + "/assets/img/TharoJaipurCircular.png");
+});
+
 app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running at port 3000");
 });
