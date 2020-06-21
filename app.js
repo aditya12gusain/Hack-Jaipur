@@ -380,6 +380,10 @@ app.get("/photogallery.html", function (req, res) {
   res.sendFile(__dirname + "/assets/fold/photogallery.html");
 });
 
+app.get("/covid.html", function (req, res) {
+  res.sendFile(__dirname + "/Ishaan/covid.html");
+});
+
 app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running at port 3000");
 });
